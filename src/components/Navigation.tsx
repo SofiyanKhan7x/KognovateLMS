@@ -26,7 +26,7 @@ export const Navigation = ({ isLoggedIn = false, onLogout }: NavigationProps) =>
             <GraduationCap className="w-6 h-6 text-white" />
           </div>
           <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            LearnHub
+            Kognoverse
           </span>
         </Link>
 
