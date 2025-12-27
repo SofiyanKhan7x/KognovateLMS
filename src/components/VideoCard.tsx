@@ -4,11 +4,10 @@ import { Play, Clock } from "lucide-react";
 interface VideoCardProps {
   title: string;
   duration: string;
-  thumbnail: string;
   onClick: () => void;
 }
 
-export const VideoCard = ({ title, duration, thumbnail, onClick }: VideoCardProps) => {
+export const VideoCard = ({ title, duration, onClick }: VideoCardProps) => {
   return (
     <Card
       className="group glass-card shadow-soft hover:shadow-elevated transition-smooth hover:scale-105 cursor-pointer overflow-hidden"
@@ -27,7 +26,9 @@ export const VideoCard = ({ title, duration, thumbnail, onClick }: VideoCardProp
         </div>
       </div>
       <div className="p-4">
-        <h4 className="font-semibold group-hover:text-primary transition-smooth">{title}</h4>
+        <h4 className="font-semibold group-hover:text-primary transition-smooth">
+          {title}
+        </h4>
       </div>
     </Card>
   );
