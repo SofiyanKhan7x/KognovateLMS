@@ -91,7 +91,7 @@ export default function TopicContent() {
               <div className="aspect-video">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&controls=0"
+                  src="https://www.youtube.com/embed/DGKwdHMiqCg"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
                 />
