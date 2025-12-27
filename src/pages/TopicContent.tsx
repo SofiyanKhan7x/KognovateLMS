@@ -186,13 +186,7 @@
 //                 >
 //                   View Live Simulation
 //                 </Button>
-//               </div>
-//             </Card>
-//           </TabsContent>
-//         </Tabs>
-//       </main>
-//     </div>
-//   );
+//
 // }
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
