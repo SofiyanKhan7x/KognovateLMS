@@ -8,7 +8,10 @@ interface NavigationProps {
   onLogout?: () => void;
 }
 
-export const Navigation = ({ isLoggedIn = false, onLogout }: NavigationProps) => {
+export const Navigation = ({
+  isLoggedIn = false,
+  onLogout,
+}: NavigationProps) => {
   const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -26,7 +29,7 @@ export const Navigation = ({ isLoggedIn = false, onLogout }: NavigationProps) =>
             <GraduationCap className="w-6 h-6 text-white" />
           </div>
           <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Kognoverse
+            LMS
           </span>
         </Link>
 
@@ -35,7 +38,10 @@ export const Navigation = ({ isLoggedIn = false, onLogout }: NavigationProps) =>
           {isLoggedIn ? (
             <>
               <Link to="/dashboard">
-                <Button variant="ghost" className="transition-smooth hover:bg-primary/10">
+                <Button
+                  variant="ghost"
+                  className="transition-smooth hover:bg-primary/10"
+                >
                   Dashboard
                 </Button>
               </Link>
@@ -64,7 +70,11 @@ export const Navigation = ({ isLoggedIn = false, onLogout }: NavigationProps) =>
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
       </div>
 
@@ -75,7 +85,10 @@ export const Navigation = ({ isLoggedIn = false, onLogout }: NavigationProps) =>
             {isLoggedIn ? (
               <>
                 <Link to="/dashboard" onClick={() => setMobileMenuOpen(false)}>
-                  <Button variant="ghost" className="w-full justify-start transition-smooth hover:bg-primary/10">
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-start transition-smooth hover:bg-primary/10"
+                  >
                     Dashboard
                   </Button>
                 </Link>
