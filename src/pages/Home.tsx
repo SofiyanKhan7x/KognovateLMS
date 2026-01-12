@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto">
@@ -41,23 +41,22 @@ export default function Home() {
             <div className="space-y-8 animate-slide-up">
               <div className="inline-flex items-center gap-2 mb-2">
                 <span className="text-lg">🎓</span>
-                <span className="text-sm font-semibold gradient-primary bg-clip-text text-transparent">
+                <span className="text-sm  font-semibold  ">
                   World's Best Learning Platform
                 </span>
               </div>
-              
+
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 World's Best Learning Platform{" "}
-                <span className="text-primary">
-                  for Every Age
-                </span>
+                <span className="text-primary">for Every Age</span>
               </h1>
-              
+
               <p className="text-xl text-muted-foreground">
-                Unlock your potential with personalized learning experiences designed for students of all ages. 
-                From foundational skills to advanced concepts, we've got you covered.
+                Unlock your potential with personalized learning experiences
+                designed for students of all ages. From foundational skills to
+                advanced concepts, we've got you covered.
               </p>
-              
+
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
@@ -76,7 +75,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            
+
             <div className="relative animate-float">
               <div className="absolute inset-0 gradient-hero opacity-20 blur-3xl rounded-full" />
               <img
@@ -95,10 +94,11 @@ export default function Home() {
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl font-bold mb-4">Why Choose LearnHub?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Experience the future of education with our comprehensive learning platform
+              Experience the future of education with our comprehensive learning
+              platform
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div
@@ -121,7 +121,9 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="glass-card gradient-hero p-12 rounded-3xl shadow-elevated text-center text-white animate-scale-in">
-            <h2 className="text-4xl font-bold mb-4">Ready to Start Your Learning Journey?</h2>
+            <h2 className="text-4xl font-bold mb-4">
+              Ready to Start Your Learning Journey?
+            </h2>
             <p className="text-xl mb-8 opacity-90">
               Join thousands of students already learning with LearnHub
             </p>
