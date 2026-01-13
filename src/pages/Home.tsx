@@ -92,7 +92,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl font-bold mb-4">Why Choose LearnHub?</h2>
+            <h2 className="text-4xl font-bold mb-4">Why Choose LMS?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Experience the future of education with our comprehensive learning
               platform
@@ -125,7 +125,7 @@ export default function Home() {
               Ready to Start Your Learning Journey?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Join thousands of students already learning with LearnHub
+              Join thousands of students already learning with LMS
             </p>
             <Button
               size="lg"
@@ -141,7 +141,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto text-center text-muted-foreground">
-          <p>© 2024 LearnHub. All rights reserved.</p>
+          <p>© 2024 LMS. All rights reserved.</p>
         </div>
       </footer>
     </div>
