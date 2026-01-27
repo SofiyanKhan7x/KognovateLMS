@@ -13,7 +13,7 @@ export default function Dashboard() {
     },
     {
       title: "High School",
-      ageRange: "15-20 Years",
+      ageRange: "15-18 Years",
       icon: GraduationCap,
       gradient: "bg-gradient-to-br from-accent to-destructive",
       to: "/subjects/15-20",
